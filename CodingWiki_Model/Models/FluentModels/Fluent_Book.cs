@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace CodingWiki_Model.Models
 {
     //test Comment
-    public class Book
+    public class Fluent_Book
     {
         //[Key]
         public int BookId { get; set; }
@@ -22,11 +22,12 @@ namespace CodingWiki_Model.Models
         [NotMapped]
         public string PriceRange { get; set; }
 
-        public BookDetail BookDetail { get; set; }
-        [ForeignKey("Publisher")]
-        public int Publisher_Id { get; set; }
-        public Publisher Publisher { get; set; }
-        public List<BookAuthorMap> BookAuthorMap { get; set; }
+        //public Fluent_BookDetail BookDetail { get; set; }
+        //[ForeignKey("Publisher")]
+        //public int Publisher_Id { get; set; }
+        //public Fluent_Publisher Publisher { get; set; }
+        //public List<Fluent_BookAuthorMap> BookAuthorMap { get; set; }
+
 
 
     }
